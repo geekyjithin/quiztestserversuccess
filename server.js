@@ -3,7 +3,7 @@
 require('dotenv').config();
 var cuid = require('cuid');
 
-const landing_url = "https://jijo99.herokuapp.com/";
+const landing_url = "https://jijo.herokuapp.com/";
 
 var development = false;
 if ((typeof process.env.DEVELOPMENT != 'undefined') && (process.env.DEVELOPMENT == 'true')) {
@@ -19,7 +19,7 @@ var redirect_host;
 if (development == true) {
   redirect_host = 'http://localhost:3000';
 } else {
-  redirect_host = 'https://jijo99.herokuapp.com';
+  redirect_host = 'https://jijo.herokuapp.com';
 }
 
 const client_id = process.env.CLIENT_ID;
